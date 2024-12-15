@@ -11,6 +11,16 @@ enum TaskStatus {
     Done,
 }
 
+
+impl TaskStatus {
+    // fn updated(&self, next: TaskStatus) -> GenericResult<Self> {
+    //     match (self, next) {
+    //         (TaskStatus::Todo, _) => Ok(next),
+    //         (TaskStatus::Doing, TaskStatus::Doing) => Err(std::error::Error )
+    //     }
+    // }
+}
+
 #[derive(Serialize, Clone)]
 struct Task {
     status: TaskStatus,
